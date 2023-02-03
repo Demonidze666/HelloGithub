@@ -46,7 +46,7 @@
     margin: 0;
   }
   .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0;
     margin: 0 auto;
   }
@@ -124,6 +124,7 @@
     color: #fff;
 
   }
+
    /* О нас */
   .about {
     padding-bottom: 271;
@@ -248,7 +249,6 @@
 
   .services{
     background-color: #181818;
-    height: 900px;
   }
 
   .services_head {
@@ -275,7 +275,7 @@
     margin-bottom: 13px;
   }
   .services__inner {
-   
+   padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     padding-top: 127px;
@@ -327,5 +327,170 @@
     margin: 0 auto;
     color: white;
     font-size: 64px;
+  
   }
 
+  
+
+  /* Контакт */
+
+  .contact {
+
+  }
+  .contact .block__head .block__title {
+    padding-top: 95px;
+    text-align: center;
+  }
+  .inverse {
+
+  }
+
+  .block__title {
+    text-align: center;
+  }
+  .block__text {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .contact__inner {
+    
+  }
+
+  .contact__icon-box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 570px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 64px;
+  }
+
+  .contact__item {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 130px;
+  }
+
+  .contact__item i{
+    color: #323232;
+    font-size: 21px;
+  }
+
+  .icon-phone {
+
+  }
+  .contact__text a {
+    font-family: 'HelveticaNeueLTProLt';
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #898888;
+    text-decoration: none;
+    transition: .3s ;
+  }
+
+  .contact__text a:hover{
+    color: #4b4b4b;
+    text-decoration: underline;
+  }
+
+  .icon-location {
+
+  }
+
+  .icon-mail-alt {
+
+  }
+  .contact__form {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
+    margin: 0 auto;
+  }
+  .contact__form input{
+    height: 52px;
+  }
+  .contact__name {
+    margin-bottom: 20px;
+    
+  }
+  .contact__email {
+    margin-bottom: 20px;
+    
+  }
+  .contact__number {
+    margin-bottom: 20px;
+    
+  }
+  .contact__textarea{
+    margin-bottom: 21px;
+    height: 195px;
+    resize: none;
+    height: 20px;
+  }
+  .contact__text{
+    height: 120px;
+  }
+  .contact__button {
+    margin-top: 20px;
+    font-family: 'HelveticaNeueLTProLt';
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+  .contact__button:hover{
+    background-color: #161616;
+    color: white;
+  }
+  .footer {
+    padding-top: 154px;
+  }
+  .footer__text {
+    
+    text-align: center;
+    font-family: 'HelveticaNeueLTProLt';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #3b3b3b;
+  }
+  
+  /* media */
+  @media screen and (max-width: 769px){
+    .container{
+      width: 768px;
+    }
+    .about{
+      height: auto;
+      padding-bottom: 200px;
+     
+    }
+    .about__inner{
+      grid-gap: 30px;
+      grid-template-columns: max-content;
+    }
+
+    .team .block__title
+     {
+      padding-top: 100px;
+    }
+    .team__inner{
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .services__inner{
+      display: flex;
+      justify-content: center;
+      padding: 138px 0;
+      flex-wrap: wrap;
+     
+    }
+    .services__item{
+      padding: 10px;
+      text-align: center;
+      max-width: 335px;
+    }
+  }
